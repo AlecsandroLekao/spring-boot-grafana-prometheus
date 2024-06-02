@@ -8,3 +8,23 @@ services:
       - ./data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: 'root'
+    networks:
+      - my_network
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - 9090:9090
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - my_network
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge

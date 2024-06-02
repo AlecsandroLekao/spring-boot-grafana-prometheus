@@ -1,4 +1,4 @@
-package com.api_project_rabbit.api_project_rabbit;
+package com.api_project_rabbit.api_project_rabbit.Utils;
 
 import com.api_project_rabbit.api_project_rabbit.models.Dados;
 

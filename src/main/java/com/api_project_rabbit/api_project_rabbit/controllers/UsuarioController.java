@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.api_project_rabbit.api_project_rabbit.Utils.retornaDadosFake;
+import static com.api_project_rabbit.api_project_rabbit.Utils.Utils.retornaDadosFake;
 
 @RestController
 public class UsuarioController {

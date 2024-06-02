@@ -1,5 +1,6 @@
 package com.api_project_rabbit.api_project_rabbit;
 
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
